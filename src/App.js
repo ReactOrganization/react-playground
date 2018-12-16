@@ -5,6 +5,7 @@ import Controllerwillreceiveprops from './components/Willreceiveprops/'
 import FunctionAsProp from './components/PassCallbackAsProp/'
 import ShouldComponentUpdateControler from './components/ShouldComponentUpdate/'
 import MagicEightBall from './components/MagicEightBall/'
+import ConditionalRendering from './components/ConditionalRendering/'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Controllerwillreceiveprops   />
         <ShouldComponentUpdateControler />
         <MagicEightBall />
+        <ConditionalRendering />
       </div>
     );
   }
