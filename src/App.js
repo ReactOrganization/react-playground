@@ -6,6 +6,7 @@ import FunctionAsProp from './components/PassCallbackAsProp/'
 import ShouldComponentUpdateControler from './components/ShouldComponentUpdate/'
 import MagicEightBall from './components/MagicEightBall/'
 import ConditionalRendering from './components/ConditionalRendering/'
+import TernaryConditional from './components/TernaryConditional/'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <ShouldComponentUpdateControler />
         <MagicEightBall />
         <ConditionalRendering />
+        <TernaryConditional />
       </div>
     );
   }
