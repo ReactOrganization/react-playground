@@ -7,6 +7,7 @@ import ShouldComponentUpdateControler from './components/ShouldComponentUpdate/'
 import MagicEightBall from './components/MagicEightBall/'
 import ConditionalRendering from './components/ConditionalRendering/'
 import TernaryConditional from './components/TernaryConditional/'
+import ConditionalProps from './components/ConditionalProps/'
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <MagicEightBall />
         <ConditionalRendering />
         <TernaryConditional />
+        <ConditionalProps />
       </div>
     );
   }
