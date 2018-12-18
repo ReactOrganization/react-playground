@@ -22,6 +22,7 @@ class App extends Component {
         <ConditionalRendering />
         <TernaryConditional />
         <ConditionalProps />
+        <DynamicallyRenderMap />
       </div>
     );
   }

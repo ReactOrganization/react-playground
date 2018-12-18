@@ -41,8 +41,13 @@ class DynamicallyRenderMap extends React.Component {
           placeholder="Separate Items With Commas" /><br />
         <button onClick={this.handleSubmit}>Create List</button>
         <h1>My "To Do" List:</h1>
+          <h3>Rendered in render() method with map that builds list dynamically</h3>
         <ul>
           {items}
+        </ul>
+          <h3>Rendered in return method</h3>
+        <ul>
+          {this.state.toDoList.map((item, i) =>  <li key={i}>{item}</li>)}
         </ul>
       </div>
     );
