@@ -19,9 +19,8 @@ class DynamicallyRenderMap extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleSubmit() {
-    const itemsArray = this.state.userInput.split(',');
     this.setState({
-      toDoList: itemsArray
+      toDoList: this.state.userInput.split(',');
     });
   }
   handleChange(e) {
