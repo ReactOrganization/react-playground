@@ -8,6 +8,7 @@ import MagicEightBall from './components/MagicEightBall/'
 import ConditionalRendering from './components/ConditionalRendering/'
 import TernaryConditional from './components/TernaryConditional/'
 import ConditionalProps from './components/ConditionalProps/'
+import DynamicallyRenderMap from './components/DynamicallyRenderMap/'
 
 class App extends Component {
   render() {
