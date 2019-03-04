@@ -9,6 +9,7 @@ import ConditionalRendering from './components/ConditionalRendering/'
 import TernaryConditional from './components/TernaryConditional/'
 import ConditionalProps from './components/ConditionalProps/'
 import DynamicallyRenderMap from './components/DynamicallyRenderMap/'
+import FilterArray from './components/FilterArray/'
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <TernaryConditional />
         <ConditionalProps />
         <DynamicallyRenderMap />
+        <FilterArray />
       </div>
     );
   }

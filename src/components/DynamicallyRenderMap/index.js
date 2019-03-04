@@ -10,17 +10,18 @@ class DynamicallyRenderMap extends React.Component {
   constructor(props) {
     super(props);
     // change code below this line
-    this.state = {
-      userInput: '',
-      toDoList: []
-    }
+      this.state = {
+        userInput: '',
+        toDoList: []
+      }
     // change code above this line
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
   handleSubmit() {
+    const itemsArray = this.state.userInput.split(',');
     this.setState({
-      toDoList: this.state.userInput.split(',');
+      toDoList: itemsArray
     });
   }
   handleChange(e) {
@@ -29,8 +30,8 @@ class DynamicallyRenderMap extends React.Component {
     });
   }
   render() {
-    const items = this.state.toDoList.map((item, i) =>  <li key={i}>{item}</li>);
-
+    const items = this.state.toDoList.map((item,i) => <li key={i}
+  >{item}</li>); // change code here
     return (
       <div>
         <textarea
@@ -40,13 +41,13 @@ class DynamicallyRenderMap extends React.Component {
           placeholder="Separate Items With Commas" /><br />
         <button onClick={this.handleSubmit}>Create List</button>
         <h1>My "To Do" List:</h1>
-          <h3>Rendered in render() method with map that builds list dynamically</h3>
+        <h3>Rendered in render method</h3>
         <ul>
           {items}
         </ul>
-          <h3>Rendered in return method</h3>
+        <h3>Rendered in return method</h3>
         <ul>
-          {this.state.toDoList.map((item, i) =>  <li key={i}>{item}</li>)}
+          {this.state.toDoList.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       </div>
     );
